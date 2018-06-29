@@ -104,3 +104,24 @@
     // [[UIApplication sharedApplication] cancelAllLocalNotifications];
 }
 ```
+
+> # 远程通知获取deviceToken
+
+
+```
+#pragma mark - 2.用户同意后，获取DeviceToken传给服务器保存
+#pragma mark 此函数会在程序每次启动时调用(前提是用户允许通知)
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSString *token = [NSString stringWithFormat:@"%@", deviceToken];
+    token = [token stringByReplacingOccurrencesOfString:@"<" withString:@""];
+    token = [token stringByReplacingOccurrencesOfString:@">" withString:@""];
+    token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
+    if (token) NSLog(@"保存到本地并上传到服务器 token:%@",token);
+    else NSLog(@"需要打开 target -> Capabilities —> Push Notifications 否则获取不到token");
+}
+
+#pragma mark 获取DeviceToken失败
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"DDYRegist Error: %@\n\n%@", error, error.code==3000 ? @"Open capabilities->Push Notification" : @" ");
+}
+```
