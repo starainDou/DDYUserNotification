@@ -14,7 +14,6 @@
 		A4413AAE20E5C72600A41152 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AA920E5C72600A41152 /* ViewController.m */; };
 		A4413AB220E5C77300A41152 /* AppDelegate+DDYNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AB120E5C77300A41152 /* AppDelegate+DDYNotification.m */; };
 		A4413AB920E5CB2D00A41152 /* DDYAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AB620E5CB2D00A41152 /* DDYAuthorityManager.m */; };
-		A4413ABA20E5CB2D00A41152 /* NSTimer+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AB820E5CB2D00A41152 /* NSTimer+DDYExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +29,6 @@
 		A4413AB120E5C77300A41152 /* AppDelegate+DDYNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+DDYNotification.m"; sourceTree = "<group>"; };
 		A4413AB520E5CB2D00A41152 /* DDYAuthorityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYAuthorityManager.h; sourceTree = "<group>"; };
 		A4413AB620E5CB2D00A41152 /* DDYAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYAuthorityManager.m; sourceTree = "<group>"; };
-		A4413AB720E5CB2D00A41152 /* NSTimer+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+DDYExtension.h"; sourceTree = "<group>"; };
-		A4413AB820E5CB2D00A41152 /* NSTimer+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+DDYExtension.m"; sourceTree = "<group>"; };
 		A4413ABB20E5CE8E00A41152 /* DDYUserNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DDYUserNotification.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,8 +98,6 @@
 			children = (
 				A4413AB520E5CB2D00A41152 /* DDYAuthorityManager.h */,
 				A4413AB620E5CB2D00A41152 /* DDYAuthorityManager.m */,
-				A4413AB720E5CB2D00A41152 /* NSTimer+DDYExtension.h */,
-				A4413AB820E5CB2D00A41152 /* NSTimer+DDYExtension.m */,
 			);
 			path = DDYAuthorityManager;
 			sourceTree = "<group>";
@@ -183,7 +178,6 @@
 			files = (
 				A4413AAE20E5C72600A41152 /* ViewController.m in Sources */,
 				A4413AAD20E5C72600A41152 /* main.m in Sources */,
-				A4413ABA20E5CB2D00A41152 /* NSTimer+DDYExtension.m in Sources */,
 				A4413AAA20E5C72600A41152 /* AppDelegate.m in Sources */,
 				A4413AB920E5CB2D00A41152 /* DDYAuthorityManager.m in Sources */,
 				A4413AB220E5C77300A41152 /* AppDelegate+DDYNotification.m in Sources */,

@@ -104,7 +104,7 @@
         // 设置通知动作按钮的标题
         localNotification.alertAction = @"查看";
         // 角标数目
-        localNotification.applicationIconBadgeNumber = 1;
+        localNotification.applicationIconBadgeNumber = 0;
         // 设置提醒的声音，可以自己添加声音文件，这里设置为默认提示声
         localNotification.soundName = UILocalNotificationDefaultSoundName;
         //设置通知的相关参数信息，这个很重要，可以添加一些标记性内容，方便以后区分和获取通知的信息
@@ -177,7 +177,7 @@
         NSLog(@"iOS10 收到本地通知:{body:%@，title:%@,subtitle:%@,badge：%@，sound：%@，userInfo：%@}",body,title,subtitle,badge,sound,userInfo);
     }
     // 设置应用程序角标数
-    [UIApplication sharedApplication].applicationIconBadgeNumber = 99;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
     // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以设置
     completionHandler(UNNotificationPresentationOptionBadge | UNNotificationPresentationOptionSound | UNNotificationPresentationOptionAlert);
 }

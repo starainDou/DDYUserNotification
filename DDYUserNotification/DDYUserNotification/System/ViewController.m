@@ -52,7 +52,7 @@
 }
 
 - (void)handleClick:(UIButton *)sender {
-    [[DDYAuthorityManager sharedManager] ddy_PushNotificationAuthAlertShow:YES result:^(BOOL isAuthorized) {
+    [DDYAuthorityManager ddy_PushNotificationAuthAlertShow:YES result:^(BOOL isAuthorized) {
         sender.selected = isAuthorized;
     }];
 }
