@@ -1,6 +1,6 @@
 # DDYUserNotification
 
-![DDYUserNotification.png](https://github.com/starainDou/DDYDemoImage/blob/master/DDYUserNotification.png)
+![DDYUserNotification.jpg](https://github.com/starainDou/DDYDemoImage/blob/master/DDYUserNotification.jpg)
   
 
 > # 注册远程通知
